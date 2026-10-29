@@ -55,7 +55,7 @@ Currently in progress
 ## Connect With Me
 
 - **GitHub:** [LMashego99](https://github.com/LMashego99)
-- **Portfolio Website:** [View my portfolio](https://lmashego99.github.io/Leah-Portfolio/)
+- **Portfolio Website:** [View my portfolio][(https://lmashego99.github.io/Leah-Portfolio/)
 
 ## Career Goal
 
