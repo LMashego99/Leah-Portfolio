@@ -1,0 +1,406 @@
+
+/* GENERAL WEBSITE STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #111111;
+    color: #f5f5f5;
+}
+
+/* NAVIGATION BAR */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 8%;
+    background-color: #181818;
+}
+
+header h2 {
+    color: #d4af37;
+    font-size: 28px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-left: 25px;
+    font-size: 15px;
+}
+
+nav a:hover {
+    color: #d4af37;
+}
+
+/* HOME SECTION */
+
+#home {
+    min-height: 70vh;
+    padding: 80px 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#home h1 {
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#home h2 {
+    color: #d4af37;
+    font-size: 30px;
+}
+
+#home p {
+    font-size: 18px;
+    line-height: 1.8;
+    max-width: 600px;
+    color: #cccccc;
+}
+
+
+/* ABOUT SECTION */
+
+#about {
+    padding: 80px 8%;
+    background-color: #1b1b1b;
+}
+
+#about h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#about p {
+    max-width: 800px;
+    font-size: 17px;
+    line-height: 1.9;
+    color: #cccccc;
+    margin-bottom: 20px;
+}
+
+/* SKILLS SECTION */
+#skills {
+    padding: 80px 8%;
+}
+
+#skills h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.section-intro {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.skill-card {
+    background-color: #1b1b1b;
+    border: 1px solid #3a321b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.skill-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+.skill-card p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.skill-card:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+@media (max-width: 600px) {
+
+    .skills-container {
+        grid-template-columns: 1fr;
+    }
+
+    #home h1 {
+        font-size: 38px;
+    }
+
+    #home h2 {
+        font-size: 24px;
+    }
+
+    header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        margin-left: 0;
+    }
+}
+
+/* PROJECTS SECTION */
+#projects {
+    padding: 80px 8%;
+    background-color: #181818;
+}
+
+#projects h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.projects-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.project-card {
+    background-color: #111111;
+    border: 1px solid #3a321b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.project-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+.project-card p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.project-status {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.project-card:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+/* PROJECTS ON SMALL SCREENS */
+@media (max-width: 600px) {
+    .projects-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* EDUCATION SECTION */
+#education {
+    padding: 80px 8%;
+}
+
+#education h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 35px;
+}
+
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.education-card {
+    background-color: #1b1b1b;
+    border: 1px solid #3a321b;
+    padding: 25px;
+    border-radius: 10px;
+    transition: 0.3s;
+}
+
+.education-card:hover {
+    border-color: #d4af37;
+    transform: translateY(-5px);
+}
+
+.education-card h3 {
+    color: #d4af37;
+    font-size: 22px;
+}
+
+.education-card p {
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.education-card .institution {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.education-status {
+    font-size: 14px;
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .education-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CONTACT SECTION */
+#contact {
+    padding: 80px 8%;
+    background-color: #181818;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #d4af37;
+    font-size: 36px;
+    margin-bottom: 25px;
+}
+
+#contact p {
+    color: #cccccc;
+    font-size: 17px;
+    line-height: 1.8;
+    max-width: 650px;
+    margin: 0 auto 20px;
+}
+
+.contact-links {
+    margin-top: 30px;
+}
+
+.contact-links a {
+    display: inline-block;
+    background-color: #d4af37;
+    color: #111111;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 14px 25px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+.contact-links a:hover {
+    background-color: #f0d36a;
+    transform: translateY(-3px);
+}
+
+/*FOOTER*/
+footer {
+    background-colour: #111111;
+    boarder-top: 1px solid #3a321b;
+    padding: 25px 8%;
+    text-align: center;
+}
+
+footer p{
+    colour: #999999;
+    font-size: 14px;
+}
+
+/* PROFESSIONAL HERO SECTION */
+#home {
+    min-height: 75vh;
+    padding: 80px 8%;
+    display: flex;
+    align-items: center;
+    background:
+        radial-gradient(
+            circle at 85% 30%,
+            rgba(212, 175, 55, 0.10),
+            transparent 35%
+        ),
+        #111111;
+}
+
+.hero-content {
+    max-width: 800px;
+}
+
+.hero-greeting {
+    color: #d4af37;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-bottom: 20px;
+}
+
+#home h1 {
+    font-size: clamp(42px, 7vw, 72px);
+    margin: 0 0 15px;
+}
+
+#home h1 span {
+    color: #d4af37;
+}
+
+#home h2 {
+    color: #eeeeee;
+    font-size: clamp(23px, 4vw, 32px);
+    margin-bottom: 25px;
+}
+
+.hero-description {
+    max-width: 650px;
+    font-size: 18px;
+    line-height: 1.9;
+    color: #bbbbbb;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.hero-buttons a {
+    display: inline-block;
+    padding: 14px 22px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary {
+    background-color: #d4af37;
+    color: #111111;
+}
+
+.btn-secondary {
+    border: 1px solid #d4af37;
+    color: #d4af37;
+}
+
+.hero-buttons a:hover {
+    transform: translateY(-3px);
+}
